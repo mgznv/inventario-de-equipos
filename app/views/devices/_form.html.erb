@@ -1,0 +1,81 @@
+<%= form_for(@device) do |f| %>
+  <% if @device.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@device.errors.count, "error") %> prohibited this device from being saved:</h2>
+
+      <ul>
+      <% @device.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :responsable %><br>
+    <%= f.text_field :responsable %>
+  </div>
+  <div class="field">
+    <%= f.label :departamento %><br>
+    <%= f.text_field :departamento %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br>
+    <%= f.text_field :marca %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br>
+    <%= f.text_field :modelo %>
+  </div>
+  <div class="field">
+    <%= f.label :serie %><br>
+    <%= f.text_field :serie %>
+  </div>
+  <div class="field">
+    <%= f.label :factura %><br>
+    <%= f.text_field :factura %>
+  </div>
+  <div class="field">
+    <%= f.label :proveedor %><br>
+    <%= f.text_field :proveedor %>
+  </div>
+  <div class="field">
+    <%= f.label :mac_address %><br>
+    <%= f.text_field :mac_address %>
+  </div>
+  <div class="field">
+    <%= f.label :procesador %><br>
+    <%= f.text_field :procesador %>
+  </div>
+  <div class="field">
+    <%= f.label :memoria %><br>
+    <%= f.text_field :memoria %>
+  </div>
+  <div class="field">
+    <%= f.label :DD %><br>
+    <%= f.text_field :DD %>
+  </div>
+  <div class="field">
+    <%= f.label :SistemaOperativo %><br>
+    <%= f.text_field :SistemaOperativo %>
+  </div>
+  <div class="field">
+    <%= f.label :factura_SO %><br>
+    <%= f.text_field :factura_SO %>
+  </div>
+  <div class="field">
+    <%= f.label :Licencia_SO %><br>
+    <%= f.text_field :Licencia_SO %>
+  </div>
+  <div class="field">
+    <%= f.label :Office %><br>
+    <%= f.text_field :Office %>
+  </div>
+  <div class="field">
+    <%= f.label :Licencia_Office %><br>
+    <%= f.text_field :Licencia_Office %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

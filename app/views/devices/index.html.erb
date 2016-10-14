@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Devices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Responsable</th>
+      <th>Departamento</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Serie</th>
+      <th>Factura</th>
+      <th>Proveedor</th>
+      <th>Mac address</th>
+      <th>Procesador</th>
+      <th>Memoria</th>
+      <th>Dd</th>
+      <th>Sistemaoperativo</th>
+      <th>Factura so</th>
+      <th>Licencia so</th>
+      <th>Office</th>
+      <th>Licencia office</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @devices.each do |device| %>
+      <tr>
+        <td><%= device.responsable %></td>
+        <td><%= device.departamento %></td>
+        <td><%= device.marca %></td>
+        <td><%= device.modelo %></td>
+        <td><%= device.serie %></td>
+        <td><%= device.factura %></td>
+        <td><%= device.proveedor %></td>
+        <td><%= device.mac_address %></td>
+        <td><%= device.procesador %></td>
+        <td><%= device.memoria %></td>
+        <td><%= device.DD %></td>
+        <td><%= device.SistemaOperativo %></td>
+        <td><%= device.factura_SO %></td>
+        <td><%= device.Licencia_SO %></td>
+        <td><%= device.Office %></td>
+        <td><%= device.Licencia_Office %></td>
+        <td><%= link_to 'Show', device %></td>
+        <td><%= link_to 'Edit', edit_device_path(device) %></td>
+        <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device', new_device_path %>

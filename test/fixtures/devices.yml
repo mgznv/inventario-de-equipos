@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  responsable: MyString
+  departamento: MyString
+  marca: MyString
+  modelo: MyString
+  serie: MyString
+  factura: MyString
+  proveedor: MyString
+  mac_address: MyString
+  procesador: MyString
+  memoria: MyString
+  DD: MyString
+  SistemaOperativo: MyString
+  factura_SO: MyString
+  Licencia_SO: 
+  Office: MyString
+  Licencia_Office: MyString
+
+two:
+  responsable: MyString
+  departamento: MyString
+  marca: MyString
+  modelo: MyString
+  serie: MyString
+  factura: MyString
+  proveedor: MyString
+  mac_address: MyString
+  procesador: MyString
+  memoria: MyString
+  DD: MyString
+  SistemaOperativo: MyString
+  factura_SO: MyString
+  Licencia_SO: 
+  Office: MyString
+  Licencia_Office: MyString
